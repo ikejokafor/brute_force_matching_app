@@ -1,0 +1,853 @@
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+do startsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity psl_accel
+# -- Compiling architecture psl_accel of psl_accel
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# ** Warning: [8] C:\Xilinx\Vivado\2016.1\data\verilog\src\glbl.v(6): (vlog-2605) empty port name in port list.
+# 
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module mmcm_i250_o100_o27
+# 
+# Top level modules:
+# 	mmcm_i250_o100_o27
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module mmcm_i250_o100_o27_clk_wiz
+# ** Warning: [8] ..\hardware\ip\xcku115\mmcm_i250_o100_o27\mmcm_i250_o100_o27_clk_wiz.v(82): (vlog-2623) Undefined variable: clk_in1_mmcm_i250_o100_o27.
+# 
+# ** Warning: [8] ..\hardware\ip\xcku115\mmcm_i250_o100_o27\mmcm_i250_o100_o27_clk_wiz.v(139): (vlog-2623) Undefined variable: clk_out1_mmcm_i250_o100_o27.
+# 
+# ** Warning: [8] ..\hardware\ip\xcku115\mmcm_i250_o100_o27\mmcm_i250_o100_o27_clk_wiz.v(141): (vlog-2623) Undefined variable: clk_out2_mmcm_i250_o100_o27.
+# 
+# 
+# Top level modules:
+# 	mmcm_i250_o100_o27_clk_wiz
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module fpga
+# 
+# Top level modules:
+# 	fpga
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vsim +notimingchecks +nowarnTSCALE -L blk_mem_gen_v8_3_5 -L fifo_generator_v13_1_3 -L fifo_generator_v13_0_5 -L fifo_generator_v12_0_5 -L work -L soc_it_common -L brute_force_matcher -L soc_it_capi -L secureip -L unisims_ver -L simprims_ver -L unimacro_ver -L unifast_ver -fsmdebug -c -t 1ps -novopt -sv_lib {C:\SOC_IT\pslse\afu_driver\build\afu_driver} work.glbl work.testbench 
+# Refreshing C:/SOC_IT/soc_it_brute_force_tester/simulation/work.glbl
+# Loading work.glbl
+# Refreshing C:/SOC_IT/soc_it_brute_force_tester/simulation/work.testbench
+# Loading sv_std.std
+# Loading work.testbench
+# Refreshing C:/SOC_IT/soc_it_brute_force_tester/simulation/work.fpga
+# Loading work.fpga
+# Refreshing C:/SOC_IT/soc_it_brute_force_tester/simulation/work.mmcm_i250_o100_o27
+# Loading work.mmcm_i250_o100_o27
+# Refreshing C:/SOC_IT/soc_it_brute_force_tester/simulation/work.mmcm_i250_o100_o27_clk_wiz
+# Loading work.mmcm_i250_o100_o27_clk_wiz
+# Loading unisims_ver.BUFG
+# Loading unisims_ver.MMCME3_ADV
+# Loading soc_it_capi.soc_it_capi
+# Loading soc_it_common.async_input_sync
+# Loading soc_it_capi.soc_it_capi_bridge_job_control
+# Loading soc_it_common.data_sync
+# Loading soc_it_capi.soc_it_capi_bridge_mmio
+# Loading soc_it_common.parity
+# Loading soc_it_capi.soc_it_capi_mmio_to_slave_converter
+# Loading soc_it_capi.soc_it_capi_slave_mux
+# Loading soc_it_capi.soc_it_capi_host_command_interface
+# Loading soc_it_capi.soc_it_capi_host_command_message_receive_queue
+# Loading soc_it_common.fifo_fwft
+# Loading soc_it_capi.soc_it_capi_host_command_message_send_queue
+# Loading soc_it_common.fifo_fwft_prog_full_count
+# Loading soc_it_message_router.soc_it_message_router
+# Loading soc_it_capi.soc_it_capi_bridge
+# Loading soc_it_capi.soc_it_capi_command_generator
+# Loading soc_it_capi.soc_it_capi_command_tag_manager
+# Loading soc_it_common.arbitration_nway_single_cycle
+# Loading soc_it_common.fifo_fwft_prog_full
+# Loading soc_it_capi.soc_it_capi_command_array
+# Loading soc_it_capi.soc_it_capi_command_state
+# Loading soc_it_capi.soc_it_capi_command_state_arbitrate
+# Loading soc_it_capi.soc_it_capi_tag_sync_fifo
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_fifo_generator_v13_1_0
+# Loading unisims_ver.GND
+# Loading unisims_ver.VCC
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_fifo_generator_v13_1_0_synth
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_fifo_generator_top
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_fifo_generator_ramfifo
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_clk_x_pntrs
+# Loading unisims_ver.LUT4
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_synchronizer_ff
+# Loading unisims_ver.FDCE
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_synchronizer_ff_3
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_synchronizer_ff_4
+# Loading unisims_ver.LUT5
+# Loading unisims_ver.LUT3
+# Loading unisims_ver.LUT6
+# Loading unisims_ver.LUT2
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_synchronizer_ff_5
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_rd_logic
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_rd_fwft
+# Loading unisims_ver.FDPE
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_rd_status_flags_as
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_compare_1
+# Loading unisims_ver.CARRY8
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_compare_2
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_rd_bin_cntr
+# Loading unisims_ver.LUT1
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_wr_logic
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_wr_status_flags_as
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_compare
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_compare_0
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_wr_bin_cntr
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_memory
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_blk_mem_gen_v8_3_2
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_blk_mem_gen_v8_3_2_synth
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_blk_mem_gen_top
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_blk_mem_gen_generic_cstr
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_blk_mem_gen_prim_width
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_blk_mem_gen_prim_wrapper
+# Loading unisims_ver.RAMB18E2
+# Loading unisims_ver.FDRE
+# Loading soc_it_capi.nif_capi_v2_00_b_tag_sync_fifo_inner_reset_blk_ramfifo
+# Loading soc_it_capi.soc_it_capi_command_issue
+# Loading soc_it_common.arbitration_32way_single_cycle
+# Loading soc_it_common.arbitration_8way_lookup
+# Loading soc_it_capi.soc_it_capi_command_response
+# Loading soc_it_capi.soc_it_capi_response_buffer
+# Loading soc_it_capi.soc_it_capi_statistics
+# Loading soc_it_common.frequency_monitor
+# Loading soc_it_common.cdc_syncfifo
+# Loading soc_it_common.wctl
+# Loading soc_it_common.rctl
+# Loading soc_it_common.sync2
+# Loading soc_it_common.dp_ram2
+# Loading soc_it_capi.soc_it_capi_slave_mux_cdc
+# Loading soc_it_message_router.soc_it_message_router_output_port
+# Loading soc_it_message_router.soc_it_message_router_input_port
+# Loading soc_it_message_router.soc_it_message_router_input_port_type_filter
+# Loading soc_it_nif.soc_it_nif
+# Loading soc_it_nif.soc_it_nif_handler_pool
+# Loading soc_it_nif.soc_it_nif_request_handler
+# Loading soc_it_nif.soc_it_nif_tag_manager
+# Loading soc_it_nif.soc_it_nif_xpress_demux
+# Loading soc_it_common.arbitration_8way
+# Loading soc_it_common.arbitration_4way
+# Loading soc_it_nif.soc_it_nif_xpress_mux
+# Loading soc_it_nif.soc_it_nif_slave_arbiter
+# Loading soc_it_capi.soc_it_capi_buffer_if
+# Loading soc_it_capi.soc_it_capi_command_manager_slave_adapter
+# Loading soc_it_capi.fifo_128_1024_async_fwft
+# Loading soc_it_capi.fifo_128_1024_async_fwft_fifo_generator_v13_1_0
+# Loading soc_it_capi.fifo_128_1024_async_fwft_fifo_generator_v13_1_0_synth
+# Loading soc_it_capi.fifo_128_1024_async_fwft_fifo_generator_top
+# Loading soc_it_capi.fifo_128_1024_async_fwft_fifo_generator_v13_1_0_builtin
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_top
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_29
+# Loading unisims_ver.FIFO36E2
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_0
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_28
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_1
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_27
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_2
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_26
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_3
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_25
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_4
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_24
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_5
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_23
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_6
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_22
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_7
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_21
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_8
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_20
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_9
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_19
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_10
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_18
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_11
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_17
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_12
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_16
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_13
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim_15
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_extdepth_14
+# Loading soc_it_capi.fifo_128_1024_async_fwft_builtin_prim
+# Loading soc_it_capi.soc_it_capi_write_buffer_if
+# Loading soc_it_common.endian_swap
+# Loading soc_it_capi.soc_it_capi_write_buffer
+# Loading soc_it_capi.soc_it_capi_read_buffer_if
+# Loading soc_it_capi.soc_it_capi_read_buffer
+# Loading soc_it_capi.soc_it_capi_command_manager
+# Loading soc_it_capi.soc_it_capi_interrupt_if
+# Loading soc_it_common.mcp_blk
+# Loading soc_it_common.amcp_send
+# Loading soc_it_common.plsgen
+# Loading soc_it_common.asend_fsm
+# Loading soc_it_common.bmcp_recv
+# Loading soc_it_common.back_fsm
+# Loading brute_force_matcher.brute_force_matcher
+# Loading brute_force_matcher.master_if_arbiter_nway
+# Loading brute_force_matcher.brute_force_matcher_controller
+# Loading soc_it_common.sap_receive_message_queue
+# Loading soc_it_common.sap_send_message_queue
+# Loading brute_force_matcher.master_transactor
+# Loading brute_force_matcher.address_incrementer
+# Loading brute_force_matcher.brute_force_matcher_datapath
+# Loading brute_force_matcher.brute_force_matcher_dispatch_unit
+# Loading brute_force_matcher.brute_force_matcher_circular_descriptor_buffer
+# Loading soc_it_nif.soc_it_nif_handler
+# Loading soc_it_nif.soc_it_nif_master_handler
+# Loading soc_it_nif.soc_it_nif_slave_data_fifo
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_fifo_generator_v12_0
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_fifo_generator_v12_0_synth
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_fifo_generator_top
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_fifo_generator_ramfifo
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_clk_x_pntrs
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_synchronizer_ff
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_synchronizer_ff_3
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_synchronizer_ff_4
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_synchronizer_ff_5
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_rd_logic
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_rd_dc_fwft_ext_as
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_rd_fwft
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_rd_status_flags_as
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_compare_1
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_compare_2
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_rd_bin_cntr
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_wr_logic
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_wr_pf_as
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_wr_status_flags_as
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_compare
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_compare_0
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_wr_bin_cntr
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_memory
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_v8_2
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_v8_2_synth
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_top
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_generic_cstr
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_prim_width
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_prim_wrapper
+# Loading unisims_ver.RAMB36E2
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_prim_width__parameterized0
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_prim_wrapper__parameterized0
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_prim_width__parameterized1
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_prim_wrapper__parameterized1
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_prim_width__parameterized2
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_blk_mem_gen_prim_wrapper__parameterized2
+# Loading soc_it_nif.fifo_128_128_1024_async_fwft_reset_blk_ramfifo
+# Loading soc_it_nif.soc_it_nif_slave_handler
+# Loading brute_force_matcher.brute_force_matcher_engine
+# Loading brute_force_matcher.brute_force_matcher_secondary_descriptor_buffer
+# Loading brute_force_matcher.brute_force_matcher_secondary_buffer_control
+# Loading brute_force_matcher.brute_force_matcher_descriptor_compute_pipeline
+# Loading brute_force_matcher.SRL_bit
+# Loading brute_force_matcher.SRL_bus
+# Loading brute_force_matcher.brute_force_matcher_keyPointEngine
+# Loading brute_force_matcher.brute_force_matcher_match_table
+# Loading brute_force_matcher.brute_force_matcher_format_conv
+# Loading brute_force_matcher.xilinx_simple_dual_port_1_clock_ram
+# Loading brute_force_matcher.brute_force_matcher_match_table_info_bram
+# Loading blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5
+# Loading brute_force_matcher.brute_force_matcher_secondary_buffer_fifo_64dsp0
+# Loading brute_force_matcher.brute_force_matcher_secondary_buffer_fifo_64dsp1
+# Loading brute_force_matcher.brute_force_matcher_preSubSquareAccum_DSP
+# Loading blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_mem_module
+# Loading blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage
+# Loading blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_softecc_output_reg_stage
+# Loading fifo_generator_v13_1_3.fifo_generator_vlog_beh
+# Loading fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER
+# Loading fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_as
+# Loading fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_preload0
+# Loading fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stage
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading brute_force_matcher.brute_force_matcher_squareroot(brute_force_matcher_squareroot_arch)
+# Loading ieee.math_real(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading unisim.muxcy(muxcy_v)
+# Loading unisim.xorcy(xorcy_v)
+# Loading brute_force_matcher.brute_force_matcher_fixed_to_flt(brute_force_matcher_fixed_to_flt_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.fde(fde_v)
+# Loading unisim.fdre(fdre_v)
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(214): [TFMPC] - Too few port connections. Expected 45, found 44.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[0]/LBL_H/i_handler/i_master_handler
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(214): [TFMPC] - Missing connection for port 'master_handler_dbg_set'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[0]/LBL_H/i_handler/i_read_fifo/i_buffer
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Missing connection for port 'rd_data_count'.
+# 
+# Loading unisims_ver.ffsrce_fdce
+# Loading unisims_ver.x_lut3_mux4
+# Loading unisims_ver.x_lut2_mux4
+# Loading unisims_ver.ffsrce_fdpe
+# Loading unisims_ver.x_lut1_mux2
+# Loading unisims_ver.sffsrce_fdre
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[0]/LBL_H/i_handler/i_write_fifo/i_buffer
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Missing connection for port 'rd_data_count'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(316): [TFMPC] - Too few port connections. Expected 35, found 34.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[0]/LBL_H/i_handler/i_slave_handler
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(316): [TFMPC] - Missing connection for port 'slave_handler_dbg_set'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(214): [TFMPC] - Too few port connections. Expected 45, found 44.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[1]/LBL_H/i_handler/i_master_handler
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(214): [TFMPC] - Missing connection for port 'master_handler_dbg_set'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[1]/LBL_H/i_handler/i_read_fifo/i_buffer
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Missing connection for port 'rd_data_count'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[1]/LBL_H/i_handler/i_write_fifo/i_buffer
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Missing connection for port 'rd_data_count'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(316): [TFMPC] - Too few port connections. Expected 35, found 34.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[1]/LBL_H/i_handler/i_slave_handler
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(316): [TFMPC] - Missing connection for port 'slave_handler_dbg_set'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(214): [TFMPC] - Too few port connections. Expected 45, found 44.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[2]/LBL_H/i_handler/i_master_handler
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(214): [TFMPC] - Missing connection for port 'master_handler_dbg_set'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[2]/LBL_H/i_handler/i_read_fifo/i_buffer
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Missing connection for port 'rd_data_count'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[2]/LBL_H/i_handler/i_write_fifo/i_buffer
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Missing connection for port 'rd_data_count'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(316): [TFMPC] - Too few port connections. Expected 35, found 34.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[2]/LBL_H/i_handler/i_slave_handler
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(316): [TFMPC] - Missing connection for port 'slave_handler_dbg_set'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(214): [TFMPC] - Too few port connections. Expected 45, found 44.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[3]/LBL_H/i_handler/i_master_handler
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(214): [TFMPC] - Missing connection for port 'master_handler_dbg_set'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[3]/LBL_H/i_handler/i_read_fifo/i_buffer
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Missing connection for port 'rd_data_count'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[3]/LBL_H/i_handler/i_write_fifo/i_buffer
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_data_fifo.v(70): [TFMPC] - Missing connection for port 'rd_data_count'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(316): [TFMPC] - Too few port connections. Expected 35, found 34.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/LBL_HANDLERS[3]/LBL_H/i_handler/i_slave_handler
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_handler.v(316): [TFMPC] - Missing connection for port 'slave_handler_dbg_set'.
+# 
+# ** Warning: (vsim-3017) C:/SOC_IT//soc_it_capi/hardware/verilog/soc_it_capi_bridge.v(423): [TFMPC] - Too few port connections. Expected 45, found 43.
+# 
+#         Region: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_buffer_if
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_capi/hardware/verilog/soc_it_capi_bridge.v(423): [TFMPC] - Missing connection for port 'command_manager_debug_set'.
+# 
+# ** Warning: (vsim-3722) C:/SOC_IT//soc_it_capi/hardware/verilog/soc_it_capi_bridge.v(423): [TFMPC] - Missing connection for port 'read_buffer_debug_set'.
+# 
+# Loading C:\SOC_IT\pslse\afu_driver\build\afu_driver.dll
+# ** Warning: (vsim-8684) No drivers exist on out port /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(11 downto 8), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>(11 downto 8).
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(11 downto 8), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>(11 downto 8).
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i0_brute_force_matcher_datapath/genblk2[0]/i0_brute_force_matcher_engine/i0_brute_force_matcher_descriptor_compute_pipeline/i0_brute_force_matcher_squareRoot/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(25 downto 0), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i0_brute_force_matcher_datapath/genblk2[0]/i0_brute_force_matcher_engine/i0_brute_force_matcher_descriptor_compute_pipeline/i0_brute_force_matcher_squareRoot/U0/<protected>/<protected>/<protected>/<protected>/<protected>(25)(25 downto 0).
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i0_brute_force_matcher_datapath/genblk2[0]/i0_brute_force_matcher_engine/i0_brute_force_matcher_descriptor_compute_pipeline/i0_brute_force_matcher_squareRoot/U0/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i0_brute_force_matcher_datapath/genblk2[0]/i0_brute_force_matcher_engine/i0_brute_force_matcher_descriptor_compute_pipeline/i0_brute_force_matcher_squareRoot/U0/<protected>/<protected>/<protected>.
+# 
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# AFU Server is waiting for connection on DESKTOP-TGALTA9:32768
+# 
+# PSL client connection from DESKTOP-TGALTA9
+# 
+# Using PSL protocol level : 0.9908.1
+# 
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_capi/hardware/verilog/soc_it_capi_slave_mux.v(170): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_soc_it_capi_slave_mux
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_capi/hardware/verilog/soc_it_capi_slave_mux.v(171): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_soc_it_capi_slave_mux
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_capi/hardware/verilog/soc_it_capi_slave_mux.v(172): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_soc_it_capi_slave_mux
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_message_router/hardware/verilog/soc_it_message_router.v(461): Index xx into array dimension [2:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_host_command_interface/i_host_command_message_router/LBL_OUTPUTS[0]/i_output_port
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_message_router/hardware/verilog/soc_it_message_router.v(462): Index xx into array dimension [2:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_host_command_interface/i_host_command_message_router/LBL_OUTPUTS[0]/i_output_port
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_message_router/hardware/verilog/soc_it_message_router.v(461): Index xx into array dimension [2:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_host_command_interface/i_host_command_message_router/LBL_OUTPUTS[1]/i_output_port
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_message_router/hardware/verilog/soc_it_message_router.v(462): Index xx into array dimension [2:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_host_command_interface/i_host_command_message_router/LBL_OUTPUTS[1]/i_output_port
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_message_router/hardware/verilog/soc_it_message_router.v(461): Index xx into array dimension [2:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_host_command_interface/i_host_command_message_router/LBL_OUTPUTS[2]/i_output_port
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_message_router/hardware/verilog/soc_it_message_router.v(462): Index xx into array dimension [2:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_host_command_interface/i_host_command_message_router/LBL_OUTPUTS[2]/i_output_port
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/master_if_arbiter_nway.v(192): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i_master_if_arbiter
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/master_if_arbiter_nway.v(208): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i_master_if_arbiter
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/master_if_arbiter_nway.v(214): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i_master_if_arbiter
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/master_if_arbiter_nway.v(219): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i_master_if_arbiter
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# Block Memory Generator module testbench.psl_our_top.LBL_SLOT0_IS_ENABLED.LBL_SLOT0_IS_ACCELERATOR.i_slot0_accelerator.genblk1[0].i0_brute_force_matcher_match_table.match_table_info_bram.inst.native_mem_module.blk_mem_gen_v8_3_5_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/master_if_arbiter_nway.v(208): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i_master_if_arbiter
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/master_if_arbiter_nway.v(214): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i_master_if_arbiter
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_message_router/hardware/verilog/soc_it_message_router.v(462): Index xx into array dimension [2:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_host_command_interface/i_host_command_message_router/LBL_OUTPUTS[0]/i_output_port
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_message_router/hardware/verilog/soc_it_message_router.v(462): Index xx into array dimension [2:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_host_command_interface/i_host_command_message_router/LBL_OUTPUTS[1]/i_output_port
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_message_router/hardware/verilog/soc_it_message_router.v(462): Index xx into array dimension [2:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_host_command_interface/i_host_command_message_router/LBL_OUTPUTS[2]/i_output_port
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(192): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(194): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(195): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(192): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(194): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(195): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(92): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_dataout_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(93): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_dataout_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(93): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_dataout_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(94): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_dataout_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(95): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_dataout_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(92): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_dataout_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(93): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_dataout_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(93): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_dataout_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(94): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_dataout_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(95): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_dataout_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(125): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(126): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(127): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(137): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(138): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(139): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(140): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(142): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(125): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(126): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(127): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(137): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(138): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(139): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(140): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_slave_arbiter.v(142): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_slave_arbiter1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(92): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_descriptor_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(93): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_descriptor_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(93): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_descriptor_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(94): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_descriptor_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(95): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_descriptor_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(92): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_descriptor_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(93): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_descriptor_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(93): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_descriptor_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(94): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_descriptor_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(95): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_descriptor_arb0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 8  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 8  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 8  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 8  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(192): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 31  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 31  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 31  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(194): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 31  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(195): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 31  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(192): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 31  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 31  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 31  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(194): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 31  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(195): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 0 ps  Iteration: 31  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# 00000000: ah_brlat_top has either X or Z value =0x00000003
+# 
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/master_if_arbiter_nway.v(219): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 0 ps  Iteration: 32  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i_master_if_arbiter
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/master_if_arbiter_nway.v(214): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 0 ps  Iteration: 32  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i_master_if_arbiter
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(192): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 100 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 100 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 100 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(194): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 100 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(195): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 100 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb1
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(192): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 100 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 100 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(193): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 100 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(194): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 100 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_nif/hardware/verilog/soc_it_nif_xpress_link_arbiter.v(195): Index xxx into array dimension [7:0] is out of bounds.
+#    Time: 100 ps  Iteration: 0  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_soc_it_nif/i_handler_pool/i_datain_arb0
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft.v(72): Index xxxxx into array dimension [31:0] is out of bounds.
+#    Time: 2 ns  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/i_command_response/i_response_buffer/i_buffer
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft_prog_full_count.v(71): Index xxxxxxxx into array dimension [255:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/match_buffer
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/xilinx_simple_dual_port_1_clock_ram.v(113): Index xxxxxxxx into array dimension [255:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/match_table_fifo
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft.v(72): Index xxxxxx into array dimension [63:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/i_capi_interface/i_host_command_interface/i_soc_it_capi_host_command_message_receive_queue/i_msg_queue
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft_prog_full_count.v(71): Index xxxxxxx into array dimension [79:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/i_capi_interface/i_host_command_interface/i_soc_it_capi_host_command_message_send_queue/i_msg_queue
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft.v(72): Index xxxx into array dimension [15:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_buffer_if/i_slave_adapter/i_command_buffer
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft.v(72): Index xxxxx into array dimension [31:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_buffer_if/i_write_buffer_if/i_pending_tag_queue
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft.v(72): Index xxxxx into array dimension [31:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/LBL_TRANSACTORS[0]/LBL_BUFFER_IF/i_buffer_if/i_read_buffer_if/i_read_info_queue
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft.v(72): Index xxxxxxxx into array dimension [255:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/i_command_generator/i_tag_manager/i_tag_queue
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft.v(72): Index xxxxxxxxx into array dimension [511:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i0_brute_force_matcher_controller/i0_receive_message_queue/i_message_queue
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/brute_force_matcher_circular_descriptor_buffer.v(254): Index xxxxxxxxxxx into array dimension [2047:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i0_brute_force_matcher_datapath/i0_brute_force_matcher_primary_descriptor_buffer
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft_prog_full_count.v(71): Index xxxxx into array dimension [31:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i0_brute_force_matcher_datapath/genblk2[0]/i0_brute_force_matcher_engine/i0_brute_force_matcher_secondary_descriptor_buffer/i0_fifo_fwft_prog_full_count
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/brute_force_matcher_circular_descriptor_buffer.v(254): Index x into array dimension [1:0] is out of bounds.
+#    Time: 2 ns  Iteration: 4  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i0_brute_force_matcher_datapath/genblk2[0]/i0_brute_force_matcher_engine/i0_brute_force_matcher_secondary_descriptor_buffer/i0_brute_force_matcher_secondary_descriptor_buffer
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2 ns  Iteration: 7  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2 ns  Iteration: 7  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/master_if_arbiter_nway.v(208): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 2 ns  Iteration: 18  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i_master_if_arbiter
+# ** Warning: (vsim-8233) C:/SOC_IT//brute_force_matcher/hardware/verilog/master_if_arbiter_nway.v(208): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 2 ns  Iteration: 18  Instance: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/i_master_if_arbiter
+# 00000004: ah_brlat_top has either X or Z value =0x00000003
+# 
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft.v(72): Index xxxxx into array dimension [31:0] is out of bounds.
+#    Time: 6 ns  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/i_command_response/i_response_buffer/i_buffer
+# 00000006: Job 0x080 EA=0x0000000000000000
+# 
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft.v(72): Index xxxxx into array dimension [31:0] is out of bounds.
+#    Time: 10 ns  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/i_command_response/i_response_buffer/i_buffer
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_capi/hardware/verilog/soc_it_capi_slave_mux.v(172): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 10 ns  Iteration: 6  Instance: /testbench/psl_our_top/i_capi_interface/i_soc_it_capi_slave_mux
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_capi/hardware/verilog/soc_it_capi_slave_mux.v(171): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 10 ns  Iteration: 6  Instance: /testbench/psl_our_top/i_capi_interface/i_soc_it_capi_slave_mux
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_capi/hardware/verilog/soc_it_capi_slave_mux.v(170): Index xx into array dimension [3:0] is out of bounds.
+#    Time: 10 ns  Iteration: 6  Instance: /testbench/psl_our_top/i_capi_interface/i_soc_it_capi_slave_mux
+# ** Warning: (vsim-8233) C:/SOC_IT//soc_it_common/hardware/fifo/fifo_fwft.v(72): Index xxxxx into array dimension [31:0] is out of bounds.
+#    Time: 14 ns  Iteration: 1  Instance: /testbench/psl_our_top/i_capi_interface/i_bridge/i_command_response/i_response_buffer/i_buffer
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 554 ns  Iteration: 11  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 554 ns  Iteration: 11  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 574 ns  Iteration: 10  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 574 ns  Iteration: 10  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 574 ns  Iteration: 11  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 574 ns  Iteration: 11  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 584 ns  Iteration: 6  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word1/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 584 ns  Iteration: 6  Protected: /testbench/psl_our_top/LBL_SLOT0_IS_ENABLED/LBL_SLOT0_IS_ACCELERATOR/i_slot0_accelerator/genblk1[0]/i0_brute_force_matcher_match_table/i0_brute_force_matcher_format_conv/word0/U0/<protected>/<protected>/<protected>/<protected>/<protected>
+# 00000738: MMIO rnw=1 dw=1 addr=0x00000000 data=0x0000000000000000
+# 
+# 00000766: MMIO rnw=1 dw=1 addr=0x00000008 data=0x0000000000000000
+# 
+# 00000794: MMIO rnw=1 dw=1 addr=0x0000000a data=0x0000000000000000
+# 
+# 00000822: MMIO rnw=1 dw=1 addr=0x0000000c data=0x0000000000000000
+# 
+# 00000850: MMIO rnw=1 dw=1 addr=0x0000000e data=0x0000000000000000
+# 
+# 00000878: MMIO rnw=1 dw=1 addr=0x00000010 data=0x0000000000000000
+# 
+# 00000906: MMIO rnw=1 dw=1 addr=0x00000012 data=0x0000000000000000
+# 
+# 00000938: MMIO rnw=1 dw=0 addr=0x00000040 data=0x0000000000000000
+# 
+# 00000966: MMIO rnw=1 dw=0 addr=0x00000042 data=0x0000000000000000
+# 
+# 00001074: Job 0x080 EA=0x0000000000000000
+# 
+# 00001826: Job 0x090 EA=0xdeadbeef8badf00d
+# 
+# 00001982: MMIO rnw=0 dw=1 addr=0x00300000 data=0x0000000000000001
+# 
+# 00002008: ah_mmdata has either X or Z value =0xffffffffffffffff
+# 
+# 00002162: MMIO rnw=0 dw=1 addr=0x00300008 data=0x0000000000000001
+# 
+# 00002196: ah_mmdata has either X or Z value =0xffffffffffffffff
+# 
+# 00002358: MMIO rnw=1 dw=1 addr=0x00100000 data=0x0000000000000001
+# 
+# 00002606: MMIO rnw=1 dw=1 addr=0x00100008 data=0x0000000000000001
+# 
+# 00002646: MMIO rnw=0 dw=1 addr=0x00100800 data=0x0004500708000022
+# 
+# 00002686: MMIO rnw=0 dw=1 addr=0x00100808 data=0x0000000000000001
+# 
+# 00002734: MMIO rnw=0 dw=1 addr=0x00100800 data=0x0000027b299ec900
+# 
+# 00002774: MMIO rnw=0 dw=1 addr=0x00100808 data=0x0000027b299ece00
+# 
+# 00002974: MMIO rnw=0 dw=1 addr=0x00100800 data=0x0000027b299ed300
+# 
+# 00003014: MMIO rnw=0 dw=1 addr=0x00100808 data=0x0000022000000220
+# 
+# 00003062: MMIO rnw=0 dw=1 addr=0x00100800 data=0x0000000000000001
+# 
+# 00003102: MMIO rnw=0 dw=1 addr=0x00100808 data=0x0000000000020002
+# 
+# 00003286: MMIO rnw=0 dw=1 addr=0x00100800 data=0x0000027b299ec680
+# 
+# 00003326: MMIO rnw=0 dw=1 addr=0x00100808 data=0x0000002000000002
+# 
+# 00004114: Command Valid: ccom=0xa00
+# 
+# 00004126: Buffer Write tag=0x1f
+# 
+# 00004134: Buffer Write tag=0x1f
+# 
+# 00004194: Response tag=0x1f code=0x00 credits=1
+# 
+# 00004194: Command Valid: ccom=0xa00
+# 
+# 00004210: Buffer Write tag=0x1e
+# 
+# 00004230: Response tag=0x1e code=0x00 credits=1
+# 
+# 00004274: Command Valid: ccom=0xa00
+# 
+# 00004286: Buffer Write tag=0x1d
+# 
+# 00004294: Buffer Write tag=0x1d
+# 
+# 00004310: Response tag=0x1d code=0x00 credits=1
+# 
+# 00004358: Command Valid: ccom=0xa00
+# 
+# 00004370: Buffer Write tag=0x1c
+# 
+# 00004378: Buffer Write tag=0x1c
+# 
+# 00004398: Response tag=0x1c code=0x00 credits=1
+# 
+# 00004438: Command Valid: ccom=0xa00
+# 
+# 00004450: Buffer Write tag=0x1b
+# 
+# 00004458: Buffer Write tag=0x1b
+# 
+# 00004490: Response tag=0x1b code=0x00 credits=1
+# 
+# 00005766: Command Valid: ccom=0xa00
+# 
+# 00005778: Buffer Write tag=0x1a
+# 
+# 00005786: Buffer Write tag=0x1a
+# 
+# 00005794: Response tag=0x1a code=0x00 credits=1
+# 
+# 00005846: Command Valid: ccom=0xa00
+# 
+# 00005858: Buffer Write tag=0x19
+# 
+# 00005866: Buffer Write tag=0x19
+# 
+# 00005926: Command Valid: ccom=0xa00
+# 
+# 00005938: Buffer Write tag=0x18
+# 
+# 00005946: Buffer Write tag=0x18
+# 
+# 00005950: Response tag=0x19 code=0x00 credits=1
+# 
+# 00005990: Response tag=0x18 code=0x00 credits=1
+# 
+# 00006006: Command Valid: ccom=0xa00
+# 
+# 00006018: Buffer Write tag=0x17
+# 
+# 00006026: Buffer Write tag=0x17
+# 
+# 00006050: Response tag=0x17 code=0x00 credits=1
+# 
+# 00006090: Command Valid: ccom=0xa00
+# 
+# 00006102: Buffer Write tag=0x16
+# 
+# 00006110: Buffer Write tag=0x16
+# 
+# 00006266: Response tag=0x16 code=0x00 credits=1
+# 
