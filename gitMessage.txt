@@ -1,1 +1,1 @@
-committed brute force matching app:
+committed brute force matching app, needs cleanup and documentation
